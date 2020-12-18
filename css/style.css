@@ -18,12 +18,19 @@ body{
 .container{
     width: 80%;
     margin: auto;
-    padding: 30px 0px;
 }
 .main-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
+}
+.logo{
+    max-width: 100%;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
 }
 .navigation li{
     list-style: none;
@@ -36,6 +43,39 @@ body{
 }
 .navigation li:hover{
     transform: scale(1.2);
+}
+svg{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    color: white;
+    cursor:pointer;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 30px;
+    display: none;
+}
+.mobile-menu{
+    position: fixed;
+    width: 250px;
+    right: -250px;
+    transition: all .5s ease;
+    background: #fff;
+    color: black;
+}
+.mobile-menu li{
+    list-style: none;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: x-large;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.mobile-menu li:hover{
+    font-size: 25px;
 }
 .flex-container{
     display: flex;
@@ -68,6 +108,9 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+.image img{
+    max-width: 100%;
+}
 .footer-img{
     display: flex;
     justify-content: center;
@@ -78,10 +121,16 @@ body{
     height: 100px;
     margin: 30px;
     cursor: pointer;
+    max-width: 100%;
     transition: all .5s ease-in;
 }
 .footer-img img:hover{
     transform: scale(1.2);
+}
+footer{
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 2px;
 }
 
 /* pepsi blue style */
@@ -96,4 +145,41 @@ body{
 /* pepsi black style */
 .black-pepsi-background{
     background: #171a1b; 
+}
+
+@media(max-width: 425px){
+    .navigation li{
+        display: none;
+    }
+    svg{
+        display: inline-block;
+    }
+    .flex-container{
+        display: block;
+    }
+    .page-content div{
+        margin-top: 15px;
+    }
+    .page-content h1{
+        font-size: 30px
+    }
+    .page-content h2{
+        font-size: 60px;
+    }
+    .page-content p{
+        font-size: 15px;
+    }
+    .page-content button{
+        padding: 10px 15px;
+       margin: 30px 0;
+    }
+    .image img{
+        height: 300px;
+    }
+    .footer-img{
+        display: block;
+    }
+    .footer-img img{
+        margin: 10px;
+    }
 }

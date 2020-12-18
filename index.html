@@ -10,7 +10,7 @@
     <section id="main-header">
         <div class="container">
             <div class="main-nav">
-                <div><img src=".//img/logo.png" alt="" srcset=""></div>
+                <div class="logo"><img src=".//img/logo.png" alt="" srcset=""></div>
                 <div class="navigation">
                     <ul>
                         <li>home</li>
@@ -18,33 +18,53 @@
                         <li>what's up</li>
                         <li>news letter</li>
                         <li>contact</li>
+                        <svg class="w-8 text-primary" viewBox="0 0 20 20" fill="currentColor" class="menu-alt2 w-6 h-6"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <div class="mobile-menu">
+           <ul>
+            <li>home</li>
+            <li>product</li>
+            <li>what's up</li>
+            <li>news letter</li>
+            <li>contact</li>
+           </ul>
+
+        </div>
     </section>
+
     <section id="content">
        <div class="container">
         <div class="flex-container">
             <div class="page-content">
-                <h1>that's what</h1>
-                <h2>i like</h2>
+                <div>
+                    <h1>that's what</h1>
+                    <h2>i like</h2>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore ducimus voluptas nemo consequatur officia eveniet. Temporibus labore earum ratione modi optio pariatur ullam, exercitationem illo? Nemo nihil saepe quibusdam?</p>
                 <button>view all products</button>
             </div>
-            <div class="image">
-                <img src="./img/pepsi001.png" alt="landing image" id="pepsi-image">
+            <div class="image" align="center">
+                <img src="./img/pepsi001.png" alt="landing image" id="pepsi-image"> 
             </div>
         </div>
        </div>
     </section>
     <section>
-        <div class="container footer-img">
+        <div class="container footer-img" align="center">
+            <h1 style="text-transform: capitalize;margin-top: 15px;">choose theme </h1>
             <img src="./img/pepsi001.png" alt="pepsi" id="img1">
             <img src="./img/pepsi002.png" alt="pepsi" id="img2">
             <img src="./img/pepsi003.png" alt="pepsi" id="img3">
         </div>
     </section>
+
+    <footer align="center"> 
+        <p>made with <i class="fa fa-heart"></i> by <a href="http://twitter.com/Dev_mayowa" target="_blank" rel="noopener noreferrer">oluwamayowa</a><i style="color: dodgerblue;" class="fa fa-twitter"></i></p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,21 @@
 const bluePepsi = document.querySelector("#img1");
 const redPepsi = document.querySelector("#img2");
 const blackPepsi = document.querySelector("#img3");
+const menu = document.querySelector(".mobile-menu");
+const button = document.querySelector("svg");
+
+button.addEventListener("click", toggleNav)
+menu.style.right == "-250px";
+
+function toggleNav(){
+    if(menu.style.right == "-250px"){
+     menu.style.right ="0"
+    }
+    else{
+     menu.style.right ="-250px"
+
+    }
+}
 
 bluePepsi.addEventListener("click" , () => {
     document.querySelector("body").classList.add("blue-pepsi-background");
